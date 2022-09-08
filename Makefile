@@ -1,7 +1,7 @@
 OPT = -O3 -DB_64 -I. -ISAPPOROBDD
 OPTCPP = -std=c++11
 
-enum_cis: enum_cis.cpp ConnectedInducedSubgraphSpec.hpp testCIS.hpp ConvEVDD.hpp SAPPOROBDD/bddc.o SAPPOROBDD/BDD.o SAPPOROBDD/ZBDD.o
+enum_cis: enum_cis.cpp ConnectedInducedSubgraphSpec.hpp ConvEVDD.hpp SAPPOROBDD/bddc.o SAPPOROBDD/BDD.o SAPPOROBDD/ZBDD.o
 	g++ $(OPT) $(OPTCPP) enum_cis.cpp SAPPOROBDD/bddc.o SAPPOROBDD/BDD.o SAPPOROBDD/ZBDD.o -o enum_cis
 
 e_to_v: e_to_v.cpp ConvEVDD.hpp SAPPOROBDD/bddc.o SAPPOROBDD/BDD.o SAPPOROBDD/ZBDD.o
