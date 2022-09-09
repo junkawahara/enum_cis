@@ -1,5 +1,4 @@
 # enum_cis
-=================
 
 ## Usage
 
@@ -23,10 +22,9 @@ make
 
 ### test
 
-Currently, not supported.
-
 ```
-./enum_cis -test
+./enum_cis
 ```
 
+If you run enum_cis without any argument, the test code carries out.
 If the program successfully runs, it outputs "test passed!".
